@@ -1,2 +1,3 @@
-# VPProekt
-Proekt po predmetot Vizuelno Programiranje
+# Проект по предметот Визуелно Програмирање
+
+Мојот проект за предметот Визуелно Програмирање
