@@ -17,12 +17,13 @@ namespace FlappyBirdClone
         int score = 0;
         int cloudSpeed = 9;
         Random rand = new Random();
-       
+        bool isGameOver;
 
         public Form1()
         {
             InitializeComponent();
             DoubleBuffered = true;
+            isGameOver = false;
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
@@ -80,6 +81,13 @@ namespace FlappyBirdClone
 
         private void gameKeyIsDown(object sender, KeyEventArgs e)
         {
+            if (isGameOver)
+            {
+                Form1 NewForm = new Form1();
+                NewForm.Show();
+                this.Dispose(false);
+            }
+
             if(e.KeyCode == Keys.Space)
             {
                 gravity = -13;
@@ -97,7 +105,9 @@ namespace FlappyBirdClone
         private void gameOver()
         {
             gameTimer.Stop();
+            isGameOver = true;
             lbGameOver.Text = "Kraj na igrata :(";
+            lbGameOver2.Text = "Pritisni spejs za nov po~etok";
         }
     }
 }

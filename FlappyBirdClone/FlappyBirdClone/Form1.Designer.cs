@@ -41,6 +41,7 @@
             this.cloud = new System.Windows.Forms.PictureBox();
             this.grass4 = new System.Windows.Forms.PictureBox();
             this.grass5 = new System.Windows.Forms.PictureBox();
+            this.lbGameOver2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grass1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTopPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birdPb)).BeginInit();
@@ -160,12 +161,23 @@
             this.grass5.TabIndex = 14;
             this.grass5.TabStop = false;
             // 
+            // lbGameOver2
+            // 
+            this.lbGameOver2.AutoSize = true;
+            this.lbGameOver2.Font = new System.Drawing.Font("Macedonian Tms", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGameOver2.ForeColor = System.Drawing.Color.White;
+            this.lbGameOver2.Location = new System.Drawing.Point(12, 282);
+            this.lbGameOver2.Name = "lbGameOver2";
+            this.lbGameOver2.Size = new System.Drawing.Size(0, 34);
+            this.lbGameOver2.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(478, 575);
+            this.Controls.Add(this.lbGameOver2);
             this.Controls.Add(this.grass5);
             this.Controls.Add(this.grass4);
             this.Controls.Add(this.grass1);
@@ -207,6 +219,7 @@
         private System.Windows.Forms.PictureBox grass1;
         private System.Windows.Forms.PictureBox grass4;
         private System.Windows.Forms.PictureBox grass5;
+        private System.Windows.Forms.Label lbGameOver2;
     }
 }
 
