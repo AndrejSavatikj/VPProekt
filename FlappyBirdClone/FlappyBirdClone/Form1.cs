@@ -108,6 +108,8 @@ namespace FlappyBirdClone
             isGameOver = true;
             lbGameOver.Text = "Kraj na igrata :(";
             lbGameOver2.Text = "Pritisni spejs za nov po~etok";
+            lbFinalScore.Text = "Finalen rezultat: " + score;
+            lbScore.Text = "";
         }
     }
 }

@@ -42,6 +42,7 @@
             this.grass4 = new System.Windows.Forms.PictureBox();
             this.grass5 = new System.Windows.Forms.PictureBox();
             this.lbGameOver2 = new System.Windows.Forms.Label();
+            this.lbFinalScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grass1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTopPb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birdPb)).BeginInit();
@@ -83,7 +84,7 @@
             // grass1
             // 
             this.grass1.Image = global::FlappyBirdClone.Properties.Resources.grass__1_;
-            this.grass1.Location = new System.Drawing.Point(16, 453);
+            this.grass1.Location = new System.Drawing.Point(16, 452);
             this.grass1.Name = "grass1";
             this.grass1.Size = new System.Drawing.Size(55, 50);
             this.grass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,12 +172,23 @@
             this.lbGameOver2.Size = new System.Drawing.Size(0, 34);
             this.lbGameOver2.TabIndex = 15;
             // 
+            // lbFinalScore
+            // 
+            this.lbFinalScore.AutoSize = true;
+            this.lbFinalScore.Font = new System.Drawing.Font("Macedonian Tms", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFinalScore.ForeColor = System.Drawing.Color.White;
+            this.lbFinalScore.Location = new System.Drawing.Point(43, 158);
+            this.lbFinalScore.Name = "lbFinalScore";
+            this.lbFinalScore.Size = new System.Drawing.Size(0, 43);
+            this.lbFinalScore.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(478, 575);
+            this.Controls.Add(this.lbFinalScore);
             this.Controls.Add(this.lbGameOver2);
             this.Controls.Add(this.grass5);
             this.Controls.Add(this.grass4);
@@ -220,6 +232,7 @@
         private System.Windows.Forms.PictureBox grass4;
         private System.Windows.Forms.PictureBox grass5;
         private System.Windows.Forms.Label lbGameOver2;
+        private System.Windows.Forms.Label lbFinalScore;
     }
 }
 
